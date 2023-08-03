@@ -4,28 +4,37 @@
 <meta http-equiv="content-type" content="text/html; charset=utf-8" />
 <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
-<link rel="stylesheet" href="assets/css/main.css?_v=20230802171035">
+<link rel="stylesheet" href="assets/css/main.css?_v=20230803214706">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter&family=Poppins:wght@400;500;600;700&display=swap&_v=20230802171035" rel="stylesheet">
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css?_v=20230802171035">
-<script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js?_v=20230802171035"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter&family=Poppins:wght@400;500;600;700&display=swap&_v=20230803214706" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css?_v=20230803214706">
+<script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js?_v=20230803214706"></script>
 <link rel="shortcut icon" href="assets/img/fav.ico" />
 <link rel="apple-touch-icon" href="assets/img/fav.png" />
 <link rel="icon" type="image/png" href="assets/img/favicon.png"></head>
 <body>
 <div class="wrapper">
+  <div class="anchor" id="top"></div>
   <header class="header">
     <div class="container">
-      <div class="header__row"><a class="header__logo" href=""><img src="./assets/img/svg/svg/footer-logo.svg" alt=""/></a>
-        <div class="header__nav">
+      <div class="header__row"><a class="header__logo header__logo--mobile" href=""><img src="./assets/img/svg/svg/footer-logo.svg" alt=""/></a>
+        <div class="header__nav hidden" id="mob_menu">
           <div class="header__center">
-            <div class="header__info">
-              <div class="header__city"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+            <div class="header__info"><a class="header__logo header__logo--desktop" href=""><img src="./assets/img/svg/svg/footer-logo.svg" alt=""/></a>
+              <div class="header__top">
+                <div class="header__location">
+                  <div class="header__city"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
 <path fill-rule="evenodd" clip-rule="evenodd" d="M5.04953 4.04999C6.36235 2.73717 8.14292 1.99963 9.99953 1.99963C11.8561 1.99963 13.6367 2.73717 14.9495 4.04999C16.2623 5.36281 16.9999 7.14338 16.9999 8.99999C16.9999 10.8566 16.2623 12.6372 14.9495 13.95L9.99953 18.9L5.04953 13.95C4.39944 13.3 3.88376 12.5283 3.53193 11.6789C3.18011 10.8296 2.99902 9.9193 2.99902 8.99999C2.99902 8.08068 3.18011 7.17037 3.53193 6.32104C3.88376 5.47172 4.39944 4.70001 5.04953 4.04999ZM9.99953 11C10.53 11 11.0387 10.7893 11.4137 10.4142C11.7888 10.0391 11.9995 9.53042 11.9995 8.99999C11.9995 8.46956 11.7888 7.96085 11.4137 7.58578C11.0387 7.2107 10.53 6.99999 9.99953 6.99999C9.4691 6.99999 8.96039 7.2107 8.58532 7.58578C8.21024 7.96085 7.99953 8.46956 7.99953 8.99999C7.99953 9.53042 8.21024 10.0391 8.58532 10.4142C8.96039 10.7893 9.4691 11 9.99953 11Z" fill="#D91A3C"/>
 </svg><span>Москва</span><img src="./assets/img/svg/svg/arrow-mobile.svg" alt=""/>
+                  </div>
+                  <div class="header__address">Шенкурский проезд, 3Б</div>
+                </div>
+                <div class="header__search"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M9.60039 4.80009C8.32735 4.80009 7.10645 5.3058 6.20628 6.20598C5.3061 7.10615 4.80039 8.32705 4.80039 9.60009C4.80039 10.8731 5.3061 12.094 6.20628 12.9942C7.10645 13.8944 8.32735 14.4001 9.60039 14.4001C10.8734 14.4001 12.0943 13.8944 12.9945 12.9942C13.8947 12.094 14.4004 10.8731 14.4004 9.60009C14.4004 8.32705 13.8947 7.10615 12.9945 6.20598C12.0943 5.3058 10.8734 4.80009 9.60039 4.80009ZM2.40039 9.60009C2.40025 8.46693 2.66756 7.34974 3.1806 6.33938C3.69363 5.32902 4.4379 4.45401 5.35287 3.78552C6.26783 3.11703 7.32767 2.67394 8.44617 2.49229C9.56467 2.31063 10.7102 2.39554 11.7897 2.74011C12.8692 3.08468 13.8522 3.67917 14.6586 4.47524C15.465 5.27132 16.0721 6.24649 16.4306 7.32145C16.7891 8.39641 16.8888 9.5408 16.7216 10.6616C16.5544 11.7823 16.125 12.8478 15.4684 13.7713L21.2488 19.5517C21.4674 19.778 21.5883 20.0811 21.5856 20.3958C21.5829 20.7104 21.4567 21.0114 21.2342 21.2339C21.0117 21.4564 20.7107 21.5826 20.3961 21.5853C20.0814 21.588 19.7783 21.4671 19.552 21.2485L13.7728 15.4693C12.6956 16.2352 11.4284 16.6899 10.11 16.7834C8.79159 16.877 7.47288 16.6058 6.29835 15.9997C5.12382 15.3935 4.13881 14.4757 3.45126 13.3469C2.7637 12.2181 2.40013 10.9218 2.40039 9.60009Z" fill="#226ED8"/>
+</svg>
+                </div>
               </div>
-              <div class="header__address">Шенкурский проезд, 3Б</div>
             </div>
             <div class="header__menu">
               <div class="menu-header-menu-container">
@@ -96,8 +105,13 @@
           </div>
         </div>
         <div class="header__mob">
-          <div class="header__search header__search--mob" aria-label="search"><img src="./assets/img/svg/svg/search.svg" alt="search"/></div><a class="header__phone header__phone--mob" href="tel:+74951710216" aria-label="phone number"><img src="./assets/img/svg/svg/phone-red.svg" alt="phone number"/></a>
-          <div class="header__burger e_menu" aria-label="menu"><img src="./assets/img/svg/svg/menu-burger.svg" alt="menu burger"/></div>
+          <div class="header__search header__search--mob" aria-label="search"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M9.60039 4.79997C8.32735 4.79997 7.10645 5.30568 6.20628 6.20585C5.3061 7.10603 4.80039 8.32693 4.80039 9.59997C4.80039 10.873 5.3061 12.0939 6.20628 12.9941C7.10645 13.8943 8.32735 14.4 9.60039 14.4C10.8734 14.4 12.0943 13.8943 12.9945 12.9941C13.8947 12.0939 14.4004 10.873 14.4004 9.59997C14.4004 8.32693 13.8947 7.10603 12.9945 6.20585C12.0943 5.30568 10.8734 4.79997 9.60039 4.79997ZM2.40039 9.59997C2.40025 8.46681 2.66756 7.34962 3.1806 6.33926C3.69363 5.32889 4.4379 4.45388 5.35287 3.7854C6.26783 3.11691 7.32767 2.67382 8.44617 2.49217C9.56467 2.31051 10.7102 2.39542 11.7897 2.73999C12.8692 3.08455 13.8522 3.67905 14.6586 4.47512C15.465 5.2712 16.0721 6.24637 16.4306 7.32133C16.7891 8.39629 16.8888 9.54068 16.7216 10.6614C16.5544 11.7822 16.125 12.8476 15.4684 13.7712L21.2488 19.5516C21.4674 19.7779 21.5883 20.081 21.5856 20.3956C21.5829 20.7103 21.4567 21.0113 21.2342 21.2338C21.0117 21.4562 20.7107 21.5824 20.3961 21.5852C20.0814 21.5879 19.7783 21.467 19.552 21.2484L13.7728 15.4692C12.6956 16.2351 11.4284 16.6898 10.11 16.7833C8.79159 16.8769 7.47288 16.6057 6.29835 15.9995C5.12382 15.3934 4.13881 14.4756 3.45126 13.3468C2.7637 12.218 2.40013 10.9217 2.40039 9.59997Z" fill="#186DE4"/>
+</svg>
+          </div><a class="header__phone header__phone--mob" href="tel:+74951710216" aria-label="phone number"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+<path d="M2.40039 3.60002C2.40039 3.28176 2.52682 2.97654 2.75186 2.7515C2.97691 2.52645 3.28213 2.40002 3.60039 2.40002H6.18399C6.46804 2.40016 6.74283 2.50104 6.95948 2.68474C7.17614 2.86843 7.32061 3.12302 7.36719 3.40322L8.25519 8.72522C8.29762 8.97869 8.25756 9.23907 8.14091 9.46806C8.02425 9.69705 7.83717 9.88254 7.60719 9.99723L5.74959 10.9248C6.41572 12.5756 7.40779 14.0752 8.66652 15.3339C9.92525 16.5926 11.4248 17.5847 13.0756 18.2508L14.0044 16.3932C14.119 16.1635 14.3043 15.9765 14.5331 15.8599C14.7618 15.7433 15.0219 15.7031 15.2752 15.7452L20.5972 16.6332C20.8774 16.6798 21.132 16.8243 21.3157 17.0409C21.4994 17.2576 21.6003 17.5324 21.6004 17.8164V20.4C21.6004 20.7183 21.474 21.0235 21.2489 21.2486C21.0239 21.4736 20.7187 21.6 20.4004 21.6H18.0004C9.38439 21.6 2.40039 14.616 2.40039 6.00002V3.60002Z" fill="#D91A3C"/>
+</svg><span>8 (495) 171-02-16</span></a>
+          <div class="header__burger e_menu" aria-label="menu"></div>
         </div>
       </div>
     </div>
@@ -141,7 +155,7 @@
         </div>
         <div class="screen-1__right"><img class="screen-1__img screen-1__img--desktop" src="./assets/img/screen-1.webp" alt=""/></div>
       </div>
-      <div class="tags"><a class="tag" href="">цены</a><a class="tag" href="">наши врач</a><a class="tag" href="">почему мы ?</a><a class="tag" href="">вопросы-ответы</a><a class="tag" href="">важно знать</a></div>
+      <div class="tags"><a class="tag" href="#price">цены</a><a class="tag" href="#doctors">наши врачи</a><a class="tag" href="#why">почему мы?</a><a class="tag" href="#faq">вопросы-ответы</a><a class="tag" href="#important">важно знать</a></div>
     </div>
   </section>
   <section class="section section-bg">
@@ -152,9 +166,10 @@
           <div class="screen-2__row item-mob__head">
             <div class="screen-2__left">
               <h3 class="screen-2__title">Пакет “Эконом”</h3>
-              <div class="screen-2__price">
-                <div class="screen-2__price--old">8 000 </div>
-                <div class="screen-2__price--new">6 000 ₽</div>
+              <div class="screen-2__price price">
+                <div class="screen-2__price--old price-old">8 000 </div>
+                <div class="screen-2__price--new price-new">6 000 ₽</div>
+                <div class="screen-2__price--discount price-discount">-20%</div>
               </div>
             </div>
             <div class="screen-2__right"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"><path fill-rule="evenodd" clip-rule="evenodd" d="M6.35134 8.75111C6.57638 8.52615 6.88155 8.39977 7.19974 8.39977C7.51794 8.39977 7.82311 8.52615 8.04814 8.75111L11.9997 12.7027L15.9513 8.75111C16.062 8.6365 16.1945 8.54508 16.3409 8.48219C16.4873 8.4193 16.6447 8.3862 16.8041 8.38481C16.9634 8.38343 17.1214 8.41379 17.2689 8.47413C17.4164 8.53446 17.5503 8.62357 17.663 8.73624C17.7757 8.84891 17.8648 8.98289 17.9251 9.13037C17.9855 9.27784 18.0158 9.43586 18.0144 9.59519C18.0131 9.75453 17.98 9.91199 17.9171 10.0584C17.8542 10.2048 17.7628 10.3372 17.6481 10.4479L12.8481 15.2479C12.6231 15.4729 12.3179 15.5993 11.9997 15.5993C11.6815 15.5993 11.3764 15.4729 11.1513 15.2479L6.35134 10.4479C6.12638 10.2229 6 9.91771 6 9.59951C6 9.28131 6.12638 8.97614 6.35134 8.75111Z" fill="#161515"/></svg></div>
@@ -170,9 +185,10 @@
           <div class="screen-2__row item-mob__head">
             <div class="screen-2__left">
               <h3 class="screen-2__title">Пакет “Стандарт”</h3>
-              <div class="screen-2__price">
-                <div class="screen-2__price--old">8 000 </div>
-                <div class="screen-2__price--new">6 000 ₽</div>
+              <div class="screen-2__price price">
+                <div class="screen-2__price--old price-old">8 000 </div>
+                <div class="screen-2__price--new price-new">6 000 ₽</div>
+                <div class="screen-2__price--discount price-discount">-20%</div>
               </div>
             </div>
             <div class="screen-2__right"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"><path fill-rule="evenodd" clip-rule="evenodd" d="M6.35134 8.75111C6.57638 8.52615 6.88155 8.39977 7.19974 8.39977C7.51794 8.39977 7.82311 8.52615 8.04814 8.75111L11.9997 12.7027L15.9513 8.75111C16.062 8.6365 16.1945 8.54508 16.3409 8.48219C16.4873 8.4193 16.6447 8.3862 16.8041 8.38481C16.9634 8.38343 17.1214 8.41379 17.2689 8.47413C17.4164 8.53446 17.5503 8.62357 17.663 8.73624C17.7757 8.84891 17.8648 8.98289 17.9251 9.13037C17.9855 9.27784 18.0158 9.43586 18.0144 9.59519C18.0131 9.75453 17.98 9.91199 17.9171 10.0584C17.8542 10.2048 17.7628 10.3372 17.6481 10.4479L12.8481 15.2479C12.6231 15.4729 12.3179 15.5993 11.9997 15.5993C11.6815 15.5993 11.3764 15.4729 11.1513 15.2479L6.35134 10.4479C6.12638 10.2229 6 9.91771 6 9.59951C6 9.28131 6.12638 8.97614 6.35134 8.75111Z" fill="#161515"/></svg></div>
@@ -188,9 +204,10 @@
           <div class="screen-2__row item-mob__head">
             <div class="screen-2__left">
               <h3 class="screen-2__title">Пакет “Комфорт”</h3>
-              <div class="screen-2__price">
-                <div class="screen-2__price--old">8 000 </div>
-                <div class="screen-2__price--new">6 000 ₽</div>
+              <div class="screen-2__price price">
+                <div class="screen-2__price--old price-old">8 000 </div>
+                <div class="screen-2__price--new price-new">6 000 ₽</div>
+                <div class="screen-2__price--discount price-discount">-20%</div>
               </div>
             </div>
             <div class="screen-2__right"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"><path fill-rule="evenodd" clip-rule="evenodd" d="M6.35134 8.75111C6.57638 8.52615 6.88155 8.39977 7.19974 8.39977C7.51794 8.39977 7.82311 8.52615 8.04814 8.75111L11.9997 12.7027L15.9513 8.75111C16.062 8.6365 16.1945 8.54508 16.3409 8.48219C16.4873 8.4193 16.6447 8.3862 16.8041 8.38481C16.9634 8.38343 17.1214 8.41379 17.2689 8.47413C17.4164 8.53446 17.5503 8.62357 17.663 8.73624C17.7757 8.84891 17.8648 8.98289 17.9251 9.13037C17.9855 9.27784 18.0158 9.43586 18.0144 9.59519C18.0131 9.75453 17.98 9.91199 17.9171 10.0584C17.8542 10.2048 17.7628 10.3372 17.6481 10.4479L12.8481 15.2479C12.6231 15.4729 12.3179 15.5993 11.9997 15.5993C11.6815 15.5993 11.3764 15.4729 11.1513 15.2479L6.35134 10.4479C6.12638 10.2229 6 9.91771 6 9.59951C6 9.28131 6.12638 8.97614 6.35134 8.75111Z" fill="#161515"/></svg></div>
@@ -217,7 +234,8 @@
   </section>
   <section class="section">
     <div class="screen-4 container">
-      <h2 class="title-h2">Почему  вывод из запоя на дому стоит сделать у нас ?</h2>
+      <div class="anchor" id="why"></div>
+      <h2 class="title-h2">Почему вывод из запоя на дому стоит сделать у нас ?</h2>
       <div class="screen-4__grid">
         <div class="screen-4__item">
           <div class="screen-4__left"><img src="./assets/img/svg/svg/screen-4-1.svg" alt=""/></div>
@@ -266,6 +284,7 @@
   </section>
   <section class="section section-bg">
     <div class="screen-5 container">
+      <div class="anchor" id="important"></div>
       <div class="screen-5__row">
         <div class="screen-5__left">
           <h2 class="title-h2">Вывод из запоя на дому: показания, противопоказания и методы лечения</h2>
@@ -276,10 +295,6 @@
         </div>
         <div class="screen-5__right"><img src="./assets/img/screen-5.webp" alt=""/></div>
       </div>
-    </div>
-  </section>
-  <section class="section section-bg">
-    <div class="screen-6 container">
       <div class="tabs">
         <div class="tab" data-tab="tab1">Показания</div>
         <div class="tab" data-tab="tab2">Противопоказания</div>
@@ -352,6 +367,7 @@
   </section>
   <section class="section">
     <div class="doctors container">
+      <div id="doctors"></div>
       <div class="title__row">
         <h2 class="title-h2">Наши врачи</h2>
         <div class="slider-btn">
@@ -416,37 +432,38 @@
   </section>
   <section class="section section-bg">
     <div class="screen-7 container">
+      <div class="anchor" id="faq"></div>
       <div class="screen-7__row">
         <div class="screen-7__left">
           <h2 class="title-h2">Вопросы-ответы</h2>
-          <details>
-            <summary class="summary">
+          <div class="details item-mob">
+            <div class="summary item-mob__head">
               <h3 class="summary__text">Кто приедет ?</h3>
-              <div class="summary__icon"><img class="summary__icon--open" src="./assets/img/svg/svg/spoiler-open.svg" alt=""/><img class="summary__icon--close" src="./assets/img/svg/svg/spoiler-close.svg" alt=""/></div>
-            </summary>
-            <div class="summary-inner">Here’s some example text that may answer an FAQ or give the user some helpful advice.</div>
-          </details>
-          <details>
-            <summary class="summary">
+              <div class="summary__icon"></div>
+            </div>
+            <div class="summary-inner item-mob__content">Here’s some example text that may answer an FAQ or give the user some helpful advice.</div>
+          </div>
+          <div class="details item-mob">
+            <div class="summary item-mob__head">
               <h3 class="summary__text">Кто приедет ?</h3>
-              <div class="summary__icon"><img class="summary__icon--open" src="./assets/img/svg/svg/spoiler-open.svg" alt=""/><img class="summary__icon--close" src="./assets/img/svg/svg/spoiler-close.svg" alt=""/></div>
-            </summary>
-            <div class="summary-inner">Here’s some example text that may answer an FAQ or give the user some helpful advice.</div>
-          </details>
-          <details>
-            <summary class="summary">
+              <div class="summary__icon"></div>
+            </div>
+            <div class="summary-inner item-mob__content">Here’s some example text that may answer an FAQ or give the user some helpful advice.</div>
+          </div>
+          <div class="details item-mob">
+            <div class="summary item-mob__head">
               <h3 class="summary__text">Кто приедет ?</h3>
-              <div class="summary__icon"><img class="summary__icon--open" src="./assets/img/svg/svg/spoiler-open.svg" alt=""/><img class="summary__icon--close" src="./assets/img/svg/svg/spoiler-close.svg" alt=""/></div>
-            </summary>
-            <div class="summary-inner">Here’s some example text that may answer an FAQ or give the user some helpful advice.</div>
-          </details>
-          <details>
-            <summary class="summary">
+              <div class="summary__icon"></div>
+            </div>
+            <div class="summary-inner item-mob__content">Here’s some example text that may answer an FAQ or give the user some helpful advice.</div>
+          </div>
+          <div class="details item-mob">
+            <div class="summary item-mob__head">
               <h3 class="summary__text">Кто приедет ?</h3>
-              <div class="summary__icon"><img class="summary__icon--open" src="./assets/img/svg/svg/spoiler-open.svg" alt=""/><img class="summary__icon--close" src="./assets/img/svg/svg/spoiler-close.svg" alt=""/></div>
-            </summary>
-            <div class="summary-inner">Here’s some example text that may answer an FAQ or give the user some helpful advice.</div>
-          </details>
+              <div class="summary__icon"></div>
+            </div>
+            <div class="summary-inner item-mob__content">Here’s some example text that may answer an FAQ or give the user some helpful advice.</div>
+          </div>
         </div>
         <div class="screen-7__right"><img src="./assets/img/screen-7.webp" alt="Вопросы-ответы"/></div>
       </div>
@@ -468,6 +485,7 @@
   </section>
   <section class="section section-bg">
     <div class="screen-8 container">
+      <div class="anchor" id="price"></div>
       <h2 class="title-h2">Цены на вывод из запоя на дому</h2>
       <div class="description">Magna magna amet at tellus elementum est faucibus duis aliquet. Molestie tempus tempor ut duis felis integer adipiscing pretium. Vel eget sed diam aliquet etiam elementum aliquet. Ultrices id ac nibh amet fames justo odio lorem nulla. </div>
       <div class="screen-8__block">
@@ -475,34 +493,38 @@
           <div class="screen-8__head item-mob__head">
             <div class="screen-8__left">
               <div class="screen-8__title">Обычное очищение</div>
-              <div class="screen-8__price screen-8__price--mob">
-                <div class="screen-8__discount">-20%</div>
-                <div class="screen-8__count">4 500 р</div>
+              <div class="screen-8__price screen-8__price--mob price">
+                <div class="screen-8__price--old price-old">8 000 </div>
+                <div class="screen-8__price--new price-new">4500 ₽</div>
+                <div class="screen-8__price--discount price-discount">-30%</div>
               </div>
             </div>
             <div class="screen-8__right"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"><path fill-rule="evenodd" clip-rule="evenodd" d="M6.35134 8.75111C6.57638 8.52615 6.88155 8.39977 7.19974 8.39977C7.51794 8.39977 7.82311 8.52615 8.04814 8.75111L11.9997 12.7027L15.9513 8.75111C16.062 8.6365 16.1945 8.54508 16.3409 8.48219C16.4873 8.4193 16.6447 8.3862 16.8041 8.38481C16.9634 8.38343 17.1214 8.41379 17.2689 8.47413C17.4164 8.53446 17.5503 8.62357 17.663 8.73624C17.7757 8.84891 17.8648 8.98289 17.9251 9.13037C17.9855 9.27784 18.0158 9.43586 18.0144 9.59519C18.0131 9.75453 17.98 9.91199 17.9171 10.0584C17.8542 10.2048 17.7628 10.3372 17.6481 10.4479L12.8481 15.2479C12.6231 15.4729 12.3179 15.5993 11.9997 15.5993C11.6815 15.5993 11.3764 15.4729 11.1513 15.2479L6.35134 10.4479C6.12638 10.2229 6 9.91771 6 9.59951C6 9.28131 6.12638 8.97614 6.35134 8.75111Z" fill="#161515"/></svg></div>
           </div>
           <div class="screen-8__content item-mob__content">Алкогольное отравление после застолья либо запой от 1 до трех дней</div>
-          <div class="screen-8__price screen-8__price--desktop">
-            <div class="screen-8__discount">-20%</div>
-            <div class="screen-8__count">4 500 р</div>
+          <div class="screen-8__price screen-8__price--desktop price">
+            <div class="screen-8__price--old price-old">8 000 </div>
+            <div class="screen-8__price--new price-new">4500 ₽</div>
+            <div class="screen-8__price--discount price-discount">-30%</div>
           </div><a class="btn btn-primary" href="">Записаться</a>
         </div>
         <div class="screen-8__row item-mob">
           <div class="screen-8__head item-mob__head">
             <div class="screen-8__left">
               <div class="screen-8__title">Стационар на дому 3 визита + кодирование бесплатно</div>
-              <div class="screen-8__price screen-8__price--mob">
-                <div class="screen-8__discount">-20%</div>
-                <div class="screen-8__count">21 000 р</div>
+              <div class="screen-8__price screen-8__price--mob price">
+                <div class="screen-8__price--old price-old">8 000 </div>
+                <div class="screen-8__price--new price-new">4500 ₽</div>
+                <div class="screen-8__price--discount price-discount">-30%</div>
               </div>
             </div>
             <div class="screen-8__right"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"><path fill-rule="evenodd" clip-rule="evenodd" d="M6.35134 8.75111C6.57638 8.52615 6.88155 8.39977 7.19974 8.39977C7.51794 8.39977 7.82311 8.52615 8.04814 8.75111L11.9997 12.7027L15.9513 8.75111C16.062 8.6365 16.1945 8.54508 16.3409 8.48219C16.4873 8.4193 16.6447 8.3862 16.8041 8.38481C16.9634 8.38343 17.1214 8.41379 17.2689 8.47413C17.4164 8.53446 17.5503 8.62357 17.663 8.73624C17.7757 8.84891 17.8648 8.98289 17.9251 9.13037C17.9855 9.27784 18.0158 9.43586 18.0144 9.59519C18.0131 9.75453 17.98 9.91199 17.9171 10.0584C17.8542 10.2048 17.7628 10.3372 17.6481 10.4479L12.8481 15.2479C12.6231 15.4729 12.3179 15.5993 11.9997 15.5993C11.6815 15.5993 11.3764 15.4729 11.1513 15.2479L6.35134 10.4479C6.12638 10.2229 6 9.91771 6 9.59951C6 9.28131 6.12638 8.97614 6.35134 8.75111Z" fill="#161515"/></svg></div>
           </div>
           <div class="screen-8__content item-mob__content">Многократное посещение пациента врачом. Запой любой продолжительности, оптимально – при длительности запоя от 5 дней до 3 недель.</div>
-          <div class="screen-8__price screen-8__price--desktop">
-            <div class="screen-8__discount">-20%</div>
-            <div class="screen-8__count">21 000 р</div>
+          <div class="screen-8__price screen-8__price--desktop price">
+            <div class="screen-8__price--old price-old">8 000</div>
+            <div class="screen-8__price--new price-new">4500 ₽</div>
+            <div class="screen-8__price--discount price-discount">-30%</div>
           </div><a class="btn btn-primary" href="">Записаться</a>
         </div>
       </div>
@@ -522,13 +544,7 @@
         </div>
       </div>
       <div class="swiper screen-9__slider">
-        <div class="swiper-wrapper">
-          <div class="swiper-slide screen-9__item"><img src="./assets/img/screen-9-1.webp" alt=""/></div>
-          <div class="swiper-slide screen-9__item"><img src="./assets/img/screen-9-2.webp" alt=""/></div>
-          <div class="swiper-slide screen-9__item"><img src="./assets/img/screen-9-3.webp" alt=""/></div>
-          <div class="swiper-slide screen-9__item"><img src="./assets/img/screen-9-1.webp" alt=""/></div>
-          <div class="swiper-slide screen-9__item"><img src="./assets/img/screen-9-2.webp" alt=""/></div>
-        </div>
+        <div class="swiper-wrapper"><a class="swiper-slide screen-9__item" href="./assets/img/screen-9-1.webp" data-fslightbox="gallery"><img src="./assets/img/screen-9-1.webp" alt=""/></a><a class="swiper-slide screen-9__item" href="./assets/img/screen-9-2.webp" data-fslightbox="gallery"><img src="./assets/img/screen-9-2.webp" alt=""/></a><a class="swiper-slide screen-9__item" href="./assets/img/screen-9-3.webp" data-fslightbox="gallery"><img src="./assets/img/screen-9-3.webp" alt=""/></a><a class="swiper-slide screen-9__item" href="./assets/img/screen-9-1.webp" data-fslightbox="gallery"><img src="./assets/img/screen-9-1.webp" alt=""/></a><a class="swiper-slide screen-9__item" href="./assets/img/screen-9-2.webp" data-fslightbox="gallery"><img src="./assets/img/screen-9-2.webp" alt=""/></a></div>
       </div>
     </div>
   </section>
@@ -552,7 +568,7 @@
               <div class="review__title">Анастасия</div>
               <div class="review__date">20.09.2022 г</div>
             </div>
-            <div class="review__doctor">врач <span>Нечаев Марк Олегович</span></div>
+            <div class="review__doctor">врач <a href="">Нечаев Марк Олегович</a></div>
             <div class="review__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras purus facilisis nunc tempor. Laoreet cursus lectus et tincidunt. Tincidunt consequat netus posuere leo malesuada odio. Nulla elementum molestie nibh nec risus consectetur volutpat. Tortor pretium tincidunt id arcu non pharetra.</div>
           </div>
           <div class="swiper-slide review__item">
@@ -560,7 +576,7 @@
               <div class="review__title">Анастасия</div>
               <div class="review__date">20.09.2022 г</div>
             </div>
-            <div class="review__doctor">врач <span>Нечаев Марк Олегович</span></div>
+            <div class="review__doctor">врач <a href="">Нечаев Марк Олегович</a></div>
             <div class="review__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras purus facilisis nunc tempor. Laoreet cursus lectus et tincidunt. Tincidunt consequat netus posuere leo malesuada odio. Nulla elementum molestie nibh nec risus consectetur volutpat. Tortor pretium tincidunt id arcu non pharetra.</div>
           </div>
           <div class="swiper-slide review__item">
@@ -568,7 +584,7 @@
               <div class="review__title">Анастасия</div>
               <div class="review__date">20.09.2022 г</div>
             </div>
-            <div class="review__doctor">врач <span>Нечаев Марк Олегович</span></div>
+            <div class="review__doctor">врач <a href="">Нечаев Марк Олегович</a></div>
             <div class="review__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras purus facilisis nunc tempor. Laoreet cursus lectus et tincidunt. Tincidunt consequat netus posuere leo malesuada odio. Nulla elementum molestie nibh nec risus consectetur volutpat. Tortor pretium tincidunt id arcu non pharetra.</div>
           </div>
           <div class="swiper-slide review__item">
@@ -576,7 +592,7 @@
               <div class="review__title">Анастасия</div>
               <div class="review__date">20.09.2022 г</div>
             </div>
-            <div class="review__doctor">врач <span>Нечаев Марк Олегович</span></div>
+            <div class="review__doctor">врач <a href="">Нечаев Марк Олегович</a></div>
             <div class="review__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras purus facilisis nunc tempor. Laoreet cursus lectus et tincidunt. Tincidunt consequat netus posuere leo malesuada odio. Nulla elementum molestie nibh nec risus consectetur volutpat. Tortor pretium tincidunt id arcu non pharetra.</div>
           </div>
         </div>
@@ -619,18 +635,12 @@
         </div>
       </div>
       <div class="swiper licenses__slider">
-        <div class="swiper-wrapper">
-          <div class="swiper-slide screen-11__item"><img src="./assets/img/license.webp" alt=""/></div>
-          <div class="swiper-slide screen-11__item"><img src="./assets/img/license.webp" alt=""/></div>
-          <div class="swiper-slide screen-11__item"><img src="./assets/img/license.webp" alt=""/></div>
-          <div class="swiper-slide screen-11__item"><img src="./assets/img/license.webp" alt=""/></div>
-          <div class="swiper-slide screen-11__item"><img src="./assets/img/license.webp" alt=""/></div>
-          <div class="swiper-slide screen-11__item"><img src="./assets/img/license.webp" alt=""/></div>
-          <div class="swiper-slide screen-11__item"><img src="./assets/img/license.webp" alt=""/></div>
-        </div>
+        <div class="swiper-wrapper"><a class="swiper-slide screen-11__item" href="./assets/img/license.webp" data-fslightbox="gallery"><img src="./assets/img/license.webp" alt=""/></a><a class="swiper-slide screen-11__item" href="./assets/img/license.webp" data-fslightbox="gallery"><img src="./assets/img/license.webp" alt=""/></a><a class="swiper-slide screen-11__item" href="./assets/img/license.webp" data-fslightbox="gallery"><img src="./assets/img/license.webp" alt=""/></a><a class="swiper-slide screen-11__item" href="./assets/img/license.webp" data-fslightbox="gallery"><img src="./assets/img/license.webp" alt=""/></a><a class="swiper-slide screen-11__item" href="./assets/img/license.webp" data-fslightbox="gallery"><img src="./assets/img/license.webp" alt=""/></a><a class="swiper-slide screen-11__item" href="./assets/img/license.webp" data-fslightbox="gallery"><img src="./assets/img/license.webp" alt=""/></a><a class="swiper-slide screen-11__item" href="./assets/img/license.webp" data-fslightbox="gallery"><img src="./assets/img/license.webp" alt=""/></a></div>
       </div>
     </div>
-  </section>
+  </section><a class="top" href="#top"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M17.6483 15.2484C17.4233 15.4734 17.1181 15.5998 16.7999 15.5998C16.4817 15.5998 16.1765 15.4734 15.9515 15.2484L11.9999 11.2968L8.0483 15.2484C7.82198 15.467 7.51886 15.588 7.20422 15.5852C6.88959 15.5825 6.58861 15.4563 6.36612 15.2338C6.14363 15.0113 6.01743 14.7103 6.01469 14.3957C6.01196 14.0811 6.13291 13.7779 6.3515 13.5516L11.1515 8.75161C11.3765 8.52665 11.6817 8.40027 11.9999 8.40027C12.3181 8.40027 12.6233 8.52665 12.8483 8.75161L17.6483 13.5516C17.8733 13.7766 17.9996 14.0818 17.9996 14.4C17.9996 14.7182 17.8733 15.0234 17.6483 15.2484Z" fill="#226ED8"/>
+</svg></a>
   <footer class="footer">
     <div class="footer__top container">
       <div class="footer__block">
@@ -703,12 +713,12 @@
           <div class="footer__line footer__address"><img src="./assets/img/svg/svg/location-marker.svg" alt=""/><span>м. Алтуфьево Шенкурский пр-д 3 "Б"</span></div>
         </div>
         <div class="footer__col footer__col-2">
-          <div class="footer__spoiler">
-            <div class="footer__summary">
+          <div class="footer__spoiler item-mob">
+            <div class="footer__summary item-mob__head">
               Данные об организации<svg xmlns="http://www.w3.org/2000/svg" width="24" height="25" viewBox="0 0 24 25" fill="none">
 <path fill-rule="evenodd" clip-rule="evenodd" d="M6.3517 9.22803C6.57673 9.00306 6.8819 8.87669 7.2001 8.87669C7.5183 8.87669 7.82346 9.00306 8.0485 9.22803L12.0001 13.1796L15.9517 9.22803C16.178 9.00944 16.4811 8.88849 16.7958 8.89122C17.1104 8.89395 17.4114 9.02016 17.6339 9.24265C17.8564 9.46514 17.9826 9.76611 17.9853 10.0807C17.988 10.3954 17.8671 10.6985 17.6485 10.9248L12.8485 15.7248C12.6235 15.9498 12.3183 16.0762 12.0001 16.0762C11.6819 16.0762 11.3767 15.9498 11.1517 15.7248L6.3517 10.9248C6.12673 10.6998 6.00035 10.3946 6.00035 10.0764C6.00035 9.75823 6.12673 9.45306 6.3517 9.22803Z" fill="#186DE4"/>
             </div></svg>
-            <div class="footer__content">
+            <div class="footer__content item-mob__content">
               <div>Юридический адрес: 127349,<br> ГОРОД МОСКВА, ПРОЕЗД<br> ШЕНКУРСКИЙ, ДОМ 3Б,<br> ЭТ/ОФ 3/301-304,306</div>
               <div>ООО “АлкоСпас”<br>ИНН: 7713703136<br>ОГРН: 1107746192510</div>
             </div>
@@ -726,6 +736,6 @@
         </div>
       </div>
     </div>
-  </footer><script src="assets/js/main.min.js?_v=20230802171035"></script>
+  </footer><script src="assets/js/main.min.js?_v=20230803214706"></script>
 </div></body>
 </html>
